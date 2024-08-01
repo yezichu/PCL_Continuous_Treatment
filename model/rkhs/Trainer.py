@@ -76,7 +76,7 @@ class RKHS_Trainer():
         AZX, AWX, _ = self._prepare_data()
 
         density = GPS(self.dataset.treatment,
-                      self.dataset.treatment_proxy, self.dataset.backdoor)
+                      self.dataset.outcome_proxy, self.dataset.backdoor)
         if type == 'kde':
             gps = density.kde_gps()
         elif type == 'cnf':
