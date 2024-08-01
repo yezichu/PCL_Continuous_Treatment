@@ -1,0 +1,6 @@
+gamma_gm: 'auto'
+n_gamma_hqs: 50  
+n_alphas: 35     
+alpha_scales: 'auto'
+cv: 5
+n_components: 50 
